@@ -57,13 +57,13 @@ h2.font {
 .section-title {
   text-align: center;
   margin-bottom: 30px;
-}
-.section-title h2,
-.section-title h5 {
-  color: #666;
+  border-top: 2px solid #f00;
+  border-bottom: 2px solid #f00;
+  padding: 15px 0;
 }
 .section-title h5 {
   font-weight: bold;
+  color: #f00;
 }
 .header {
   padding-top: 40px;
@@ -75,9 +75,9 @@ h2.font {
     left: 0;
     width: 100%;
     padding: 0;
-    background-color: #fff;
+    background-color: #fbf2db;
     z-index: 9;
-    border-bottom: 1px solid #1d2087;
+    border-bottom: 2px solid #f00;
   }
 }
 .header.fixed {
@@ -86,9 +86,9 @@ h2.font {
   left: 0;
   width: 100%;
   padding: 0;
-  background-color: #fff;
+  background-color: #fbf2db;
   z-index: 9;
-  border-bottom: 1px solid #1d2087;
+  border-bottom: 2px solid #f00;
 }
 .header.fixed .header-top {
   padding: 0 20px;
@@ -112,8 +112,8 @@ h2.font {
 .header.active .header-nav {
   display: block;
   position: absolute;
-  border-top: 1px solid #1d2087;
-  background-color: rgba(255,255,255,0.8);
+  border-top: 1px solid #f00;
+  background-color: rgba(251,242,219,0.9);
   width: 100%;
   left: 0;
 }
@@ -133,7 +133,7 @@ h2.font {
 @media (max-width: 768px) {
   .header.active .header-nav a.active,
   .header.active .header-nav a:hover {
-    background-color: #1d2087;
+    background-color: #f00;
     color: #fff;
   }
 }
@@ -145,7 +145,7 @@ h2.font {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #1d2087;
+  border-bottom: 2px solid #f00;
 }
 @media (max-width: 768px) {
   .header .header-top {
@@ -170,7 +170,7 @@ h2.font {
   }
 }
 .header .header-top .topSearch {
-  background-color: rgba(238,238,238,0.7);
+  background-color: rgba(255,255,255,0.7);
   border-radius: 20px;
   height: 30px;
   padding: 0 10px;
@@ -218,7 +218,7 @@ h2.font {
   }
 }
 .header .header-nav a {
-  color: #1d2087;
+  color: #444;
   font-size: 15px;
   display: inline-block;
   border-top: 2px solid transparent;
@@ -233,7 +233,7 @@ h2.font {
 }
 .header .header-nav a.active,
 .header .header-nav a:hover {
-  border-top: 2px solid #1d2087;
+  border-top: 2px solid #f00;
   text-decoration: none;
 }
 .footer {
@@ -365,7 +365,7 @@ h2.font {
   box-shadow: none;
 }
 .noUi-connect {
-  background-color: #1d2087;
+  background-color: #f00;
 }
 .noUi-horizontal {
   height: 5px;
@@ -374,7 +374,7 @@ h2.font {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #1d2087;
+  background-color: #f00;
   box-shadow: none;
   border: none;
   top: -7px;
@@ -385,7 +385,7 @@ h2.font {
   display: none;
 }
 .slick-initialized .slick-slide {
-  margin: 0 30px;
+  margin: 0;
 }
 .slick-initialized .slick-dots {
   bottom: -50px;
@@ -405,7 +405,7 @@ h2.font {
 }
 .productGroup > div a:hover,
 .productGroup .card a:hover {
-  color: #1d2087;
+  color: #333;
 }
 .productGroup > div a:hover img,
 .productGroup .card a:hover img {
@@ -441,7 +441,7 @@ h2.font {
 }
 .productGroup > div h4,
 .productGroup .card h4 {
-  color: #1d2087;
+  color: #f00;
   font-weight: bold;
   margin-top: 12px;
 }
@@ -452,7 +452,7 @@ h2.font {
   letter-spacing: 3px;
 }
 .index {
-  background-color: #ebf6ff;
+  background-color: #fbf2db;
 }
 .index .section {
   position: relative;
@@ -463,12 +463,13 @@ h2.font {
   width: 100%;
 }
 .index .section.sec1 {
-  background-color: #93c3e1;
-  padding-bottom: 250px;
-  z-index: 2;
-  background-image: url("/imgs/slider-bg.jpg");
-  background-position: center top;
   padding-top: 200px;
+  padding-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .index .section.sec1 {
+    padding-top: 100px;
+  }
 }
 .index .section.sec1 .carousel {
   width: 100%;
@@ -504,18 +505,8 @@ h2.font {
   max-width: 100%;
 }
 .index .section.sec2 {
-  z-index: 2;
-  background-image: url("/imgs/milk01.png");
-  background-position: top center;
-  background-repeat: no-repeat;
-  padding-top: 170px;
-  margin-top: -180px;
-  padding-bottom: 200px;
-}
-@media (max-width: 768px) {
-  .index .section.sec2 {
-    padding-bottom: 20px;
-  }
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 .index .section.sec2 .adGroup {
   text-align: center;
@@ -558,28 +549,19 @@ h2.font {
   background-color: #fff;
   position: relative;
   z-index: 1;
-  margin-top: -200px;
-  padding: 200px 0;
+  padding: 80px 0;
 }
 .index .section.sec4 {
-  background-color: #d8e2eb;
-  background-image: url("/imgs/milk02.png"), url("/imgs/brickwall-blue.png");
-  background-position: center -5px;
-  background-repeat: no-repeat, repeat;
-  z-index: 2;
-  margin-top: -200px;
-  padding: 200px 0;
+  padding: 80px 0;
+  padding-bottom: 50px;
   text-align: center;
 }
-@media (max-width: 768px) {
-  .index .section.sec4 {
-    padding-top: 150px;
-    padding-bottom: 50px;
-  }
+.index .section.sec4 .container {
+  position: relative;
 }
 .index .section.sec4 .video-wrap {
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  height: 400px;
   margin: 0 auto;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -606,35 +588,40 @@ h2.font {
 }
 .index .section.sec4 .video-wrap img {
   height: 100%;
-  width: auto;
+  width: 100%;
 }
-.index .section.sec4 p {
-  font-size: 16px;
+.index .section.sec4 .video-intro {
+  position: absolute;
+  margin-top: -150px;
+  width: 100%;
+}
+.index .section.sec4 .video-intro p {
+  font-size: 23px;
+  letter-spacing: 1px;
   font-weight: bold;
-  color: #666;
+  color: #fff;
 }
-.index .section.sec4 a.more {
+.index .section.sec4 .video-intro a.more {
   display: inline-block;
   width: 150px;
   padding: 8px 0;
   font-size: 16px;
   color: #666;
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 5px;
   font-weight: bold;
   margin: 20px 0;
-  margin-top: 30px;
+  margin-top: 15px;
 }
-.index .section.sec4 a.more:hover {
+.index .section.sec4 .video-intro a.more:hover {
   text-decoration: none;
   background-color: #eee;
 }
-.index .section.sec5 .section-title h2,
-.index .section.sec5 .section-title h5 {
-  color: #fff;
+.index .section.sec5 .section-title {
+  border-color: #fff;
 }
 .index .section.sec5 .section-title h5 {
-  margin-top: 12px;
+  color: #fff;
 }
 .index .section.sec5 .boxWrap {
   display: -webkit-box;
@@ -687,6 +674,7 @@ h2.font {
   line-height: 22px;
   letter-spacing: 0.5px;
   text-align: left;
+  margin-bottom: 20px;
 }
 .index .section.sec5 .boxWrap .box .textGroup a.more {
   display: inline-block;
@@ -695,21 +683,17 @@ h2.font {
   font-size: 16px;
   color: #666;
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 5px;
   font-weight: bold;
   margin: 20px 0;
-  margin-top: 30px;
+  margin-top: 15px;
+}
+.index .section.sec5 .boxWrap .box .textGroup a.more:hover {
+  text-decoration: none;
+  background-color: #eee;
 }
 .product-item {
-  background-color: #ebf6ff;
-  background-image: url("/imgs/milk04.png"), url("/imgs/products-bg.png");
-  background-position: center top, center top;
-  background-repeat: no-repeat;
-}
-@media (max-width: 768px) {
-  .product-item {
-    background-position: center 50px, center top;
-  }
+  background-color: #fbf2db;
 }
 .product-item .section.nav {
   height: 200px;
@@ -732,7 +716,6 @@ h2.font {
   }
 }
 .product-item .section.intro .container .imgs-area .main-img {
-  background-image: url("/imgs/product-bg.jpg");
   background-size: cover;
   height: 500px;
   display: -webkit-box;
@@ -787,7 +770,7 @@ h2.font {
   margin-bottom: 5px;
 }
 .product-item .section.intro .container .intro-area > h2.price {
-  color: #1d2087;
+  color: #f00;
 }
 .product-item .section.intro .container .intro-area > h2.price span {
   font-size: 16px;
@@ -854,7 +837,7 @@ h2.font {
 }
 .product-item .section.intro .container .intro-area .sub-intro .sub-intro-title {
   padding: 0 20px;
-  background-color: #ebf6ff;
+  background-color: #fbf2db;
   position: relative;
   bottom: -10px;
   z-index: 2;
@@ -916,7 +899,7 @@ h2.font {
   cursor: pointer;
 }
 .product-item .section.intro .container .intro-area .add-to-cart .button {
-  background-color: #1d2087;
+  background-color: #f00;
   color: #fff;
 }
 .product-item .section.intro .container .intro-area .social-icons {
@@ -967,11 +950,8 @@ h2.font {
   background-color: #c3e0f1;
 }
 .products .section.nav {
-  height: 300px;
-  background-color: #ebf6ff;
-  background-image: url("/imgs/milk03.png"), url("/imgs/list-bg.jpg");
-  background-position: center 180px, center center;
-  background-repeat: no-repeat;
+  height: 200px;
+  background-color: #fbf2db;
 }
 @media (max-width: 768px) {
   .products .section.nav {
@@ -981,9 +961,7 @@ h2.font {
 }
 .products .section.content {
   padding-bottom: 50px;
-  background-color: #ebf6ff;
-  background-image: url("/imgs/products-bg.png");
-  background-position: center top;
+  background-color: #fbf2db;
 }
 .products .section.content .top-selector {
   border-bottom: 1px solid #aaa;
@@ -1053,7 +1031,7 @@ h2.font {
 }
 .products .section.content .main .side-nav .slider-control button.filter {
   outline: none;
-  background-color: #1d2087;
+  background-color: #f00;
   border: none;
   color: #fff;
   cursor: pointer;

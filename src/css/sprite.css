@@ -18,19 +18,19 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-bg-left {
   background-image: url(sprite.png);
-  background-position: -948px -816px;
+  background-position: -1016px -862px;
   width: 399px;
   height: 1326px;
 }
 .icon-bg-right {
   background-image: url(sprite.png);
-  background-position: -1347px -2142px;
+  background-position: -1415px -2188px;
   width: 326px;
   height: 1429px;
 }
 .icon-cart-white {
   background-image: url(sprite.png);
-  background-position: -582px -581px;
+  background-position: -666px -627px;
   width: 46px;
   height: 46px;
 }
@@ -48,7 +48,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-category02 {
   background-image: url(sprite.png);
-  background-position: -549px -548px;
+  background-position: -580px -578px;
   width: 33px;
   height: 33px;
 }
@@ -60,9 +60,15 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-category04 {
   background-image: url(sprite.png);
+  background-position: -549px -547px;
+  width: 31px;
+  height: 31px;
+}
+.icon-category05 {
+  background-image: url(sprite.png);
   background-position: -519px -518px;
   width: 30px;
-  height: 30px;
+  height: 29px;
 }
 .icon-close {
   background-image: url(sprite.png);
@@ -72,13 +78,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-cm {
   background-image: url(sprite.png);
-  background-position: -763px -707px;
+  background-position: -847px -753px;
   width: 69px;
   height: 69px;
 }
 .icon-facebook {
   background-image: url(sprite.png);
-  background-position: -243px -233px;
+  background-position: -195px -185px;
   width: 24px;
   height: 24px;
 }
@@ -90,7 +96,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-instagram {
   background-image: url(sprite.png);
-  background-position: -195px -185px;
+  background-position: -219px -209px;
   width: 24px;
   height: 24px;
 }
@@ -102,14 +108,14 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-logo-footer {
   background-image: url(sprite.png);
-  background-position: -683px -683px;
+  background-position: -767px -729px;
   width: 80px;
   height: 24px;
 }
 .icon-logo {
   background-image: url(sprite.png);
-  background-position: -832px -776px;
-  width: 116px;
+  background-position: -916px -822px;
+  width: 100px;
   height: 40px;
 }
 .icon-member {
@@ -126,39 +132,45 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-milk01 {
   background-image: url(sprite.png);
-  background-position: -7433px -4032px;
+  background-position: -7501px -4078px;
   width: 1920px;
   height: 723px;
 }
 .icon-milk02 {
   background-image: url(sprite.png);
-  background-position: -5513px -3862px;
+  background-position: -5581px -3908px;
   width: 1920px;
   height: 170px;
 }
 .icon-milk03 {
   background-image: url(sprite.png);
-  background-position: -1673px -3571px;
+  background-position: -1741px -3617px;
   width: 1920px;
   height: 130px;
 }
 .icon-milk04 {
   background-image: url(sprite.png);
-  background-position: -3593px -3701px;
+  background-position: -3661px -3747px;
   width: 1920px;
   height: 161px;
 }
 .icon-pinterest {
   background-image: url(sprite.png);
-  background-position: -219px -209px;
+  background-position: -243px -233px;
   width: 24px;
   height: 24px;
 }
 .icon-play {
   background-image: url(sprite.png);
-  background-position: -628px -627px;
+  background-position: -712px -673px;
   width: 55px;
   height: 56px;
+}
+.icon-poki-logo {
+  background-image: url(sprite.png);
+  background-position: -613px -611px;
+  width: 53px;
+  height: 16px;
 }
 .icon-product-favorite {
   background-image: url(sprite.png);

@@ -36,10 +36,12 @@ h2.font
 .section-title 
     text-align: center
     margin-bottom: 30px
-    h2, h5 
-        color: #666
+    border-top: 2px solid main-color
+    border-bottom: @border-top
+    padding: 15px 0
     h5 
         font-weight: bold
+        color: main-color
 .header
     padding-top: 40px
     @media(max-width: media-mobile)
@@ -48,18 +50,18 @@ h2.font
         left: 0
         width: 100%
         padding: 0
-        background-color: #fff
+        background-color: bg-color
         z-index: 9
-        border-bottom: 1px solid dark-blue
+        border-bottom: 2px solid main-color
     &.fixed
         position: fixed
         top: 0 
         left: 0
         width: 100%
         padding: 0
-        background-color: #fff
+        background-color: bg-color
         z-index: 9
-        border-bottom: 1px solid dark-blue
+        border-bottom: 2px solid main-color
         .header-top
             padding: 0 20px
             height: 60px
@@ -77,8 +79,8 @@ h2.font
         .header-nav 
             display: block
             position: absolute
-            border-top: 1px solid dark-blue
-            background-color: rgba(#fff, 0.8)
+            border-top: 1px solid main-color
+            background-color: rgba(bg-color, 0.9)
             width: 100%
             left: 0
             a
@@ -89,7 +91,7 @@ h2.font
                     border-top: none
                     font-weight: bold
                     @media(max-width: media-mobile)
-                        background-color: dark-blue
+                        background-color: main-color
                         color: #fff
     .container
         //
@@ -97,7 +99,7 @@ h2.font
         height: 80px
         display: flex
         align-items: center
-        border-bottom: 1px solid dark-blue
+        border-bottom: 2px solid main-color
         @media(max-width: media-mobile)
             display: flex
             align-items: center
@@ -110,7 +112,7 @@ h2.font
             @media(max-width: media-mobile)
                 display: inline-block
         .topSearch
-            background-color: rgba(#eee, 0.7)
+            background-color: rgba(#fff, 0.7)
             border-radius: 20px
             height: 30px
             padding: 0 10px
@@ -141,7 +143,7 @@ h2.font
             display: none
             padding: 20px 0
         a
-            color: dark-blue
+            color: #444
             font-size: 15px 
             display: inline-block
             border-top: 2px solid transparent
@@ -151,7 +153,7 @@ h2.font
                 display: block
                 padding: 10px 0
             &.active, &:hover
-                border-top: 2px solid dark-blue
+                border-top: 2px solid main-color
                 text-decoration: none
 
 .footer 
@@ -240,14 +242,14 @@ h2.font
     border: none
     box-shadow: none
 .noUi-connect
-    background-color: dark-blue
+    background-color: main-color
 .noUi-horizontal
     height: 5px
     .noUi-handle
         width: 20px
         height: @width
         border-radius: 50%
-        background-color: dark-blue
+        background-color: main-color
         box-shadow: none
         border: none
         top: -7px
@@ -259,7 +261,7 @@ h2.font
 
 .slick-initialized 
     .slick-slide
-        margin: 0 30px
+        margin: 0
     .slick-dots
         bottom: -50px
 
@@ -277,7 +279,7 @@ h2.font
             color: #666
             transition: all 0.2s ease-in-out
         a:hover 
-            color: dark-blue
+            color: #333
             img 
                 box-shadow: 0 3px 5px rgba(#000, 0.1)
         .video-link 
@@ -301,7 +303,7 @@ h2.font
             font-size: 14px
             color: #888
         h4 
-            color: dark-blue
+            color: main-color
             font-weight: bold 
             margin-top: 12px
             span

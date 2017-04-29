@@ -1,5 +1,5 @@
 .index
-    background-color: #ebf6ff
+    background-color: bg-color
     .section
         position: relative
     .section.nav
@@ -7,13 +7,10 @@
         z-index: 3
         width: 100%
     .section.sec1
-        background-color: #93C3E1
-        padding-bottom: 250px
-        z-index: 2
-        background-image: url("/imgs/slider-bg.jpg")
-        background-position: center top
         padding-top: 200px
-        
+        padding-bottom: 40px
+        @media(max-width: media-mobile)
+            padding-top: 100px
         .carousel
             width: 100%
             button.ctrl-arrow
@@ -39,17 +36,9 @@
                 img 
                     max-width: 100%
     
-    .section.sec2 
-        z-index: 2
-        background-image: url("/imgs/milk01.png")
-        background-position: top center 
-        background-repeat: no-repeat
-        // height: 723px
-        padding-top: 170px
-        margin-top: -180px
-        padding-bottom: 200px
-        @media(max-width: media-mobile)
-            padding-bottom: 20px
+    .section.sec2
+        padding-top: 40px
+        padding-bottom: 80px
         .adGroup
             text-align: center
             a.card 
@@ -86,26 +75,19 @@
         background-color: #fff
         position: relative
         z-index: 1
-        margin-top: -200px
-        padding: 200px 0
+        padding: 80px 0
 
 
      
     .section.sec4
-        background-color: #D8E2EB
-        background-image: url("/imgs/milk02.png"), url("/imgs/brickwall-blue.png")
-        background-position: center -5px 
-        background-repeat: no-repeat, repeat
-        z-index: 2
-        margin-top: -200px
-        padding: 200px 0
+        padding: 80px 0
+        padding-bottom: 50px
         text-align: center
-        @media(max-width: media-mobile)
-            padding-top: 150px
-            padding-bottom: 50px
+        .container 
+            position: relative
         .video-wrap
-            width: 600px
-            height: 300px
+            width: 100%
+            height: 400px
             margin: 0 auto
             margin-bottom: 20px
             border-radius: 10px
@@ -128,32 +110,37 @@
                 left: calc(50% - 10px)
             img 
                 height: 100%
-                width: auto
-        p 
-            font-size: 16px
-            font-weight: bold 
-            color: #666
-        a.more
-            display: inline-block
-            width: 150px 
-            padding: 8px 0
-            font-size: 16px
-            color: #666 
-            background-color: #fff
-            border-radius: 20px
-            font-weight: bold
-            margin: 20px 0
-            margin-top: 30px
-            &:hover 
-                text-decoration: none 
-                background-color: #eee
+                width: 100%
+
+        .video-intro 
+            position: absolute
+            margin-top: -150px
+            width: 100%
+            p 
+                font-size: 23px
+                letter-spacing: 1px
+                font-weight: bold 
+                color: #fff
+            a.more
+                display: inline-block
+                width: 150px 
+                padding: 8px 0
+                font-size: 16px
+                color: #666 
+                background-color: #fff
+                border-radius: 5px
+                font-weight: bold
+                margin: 20px 0
+                margin-top: 15px
+                &:hover 
+                    text-decoration: none 
+                    background-color: #eee
 
     .section.sec5
         .section-title
-            h2, h5 
+            h5 
                 color: #fff
-            h5  
-                margin-top: 12px
+            border-color: #fff
         .boxWrap
             display: flex
             @media(max-width: media-mobile)
@@ -185,6 +172,7 @@
                         line-height: 22px
                         letter-spacing: 0.5px
                         text-align: left
+                        margin-bottom: 20px
                     a.more
                         display: inline-block
                         width: 150px 
@@ -192,10 +180,13 @@
                         font-size: 16px
                         color: #666 
                         background-color: #fff
-                        border-radius: 20px
+                        border-radius: 5px
                         font-weight: bold
                         margin: 20px 0
-                        margin-top: 30px
+                        margin-top: 15px
+                        &:hover 
+                            text-decoration: none 
+                            background-color: #eee
             
 
 
