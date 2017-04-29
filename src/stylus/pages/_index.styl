@@ -8,9 +8,12 @@
         width: 100%
     .section.sec1
         padding-top: 200px
-        padding-bottom: 40px
-        @media(max-width: media-mobile)
-            padding-top: 100px
+        .slick-initialized 
+            .slick-slide
+                margin: 0 30px
+            .slick-dots
+                bottom: -50px
+        
         .carousel
             width: 100%
             button.ctrl-arrow
