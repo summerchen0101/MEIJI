@@ -33,6 +33,11 @@ h2.font {
   margin: 0 auto;
   padding: 0 20px;
 }
+@media (max-width: 1024px) {
+  .container {
+    width: 100vw;
+  }
+}
 @media (max-width: 768px) {
   .container {
     width: 100vw;
@@ -726,6 +731,12 @@ h2.font {
   padding: 0;
   position: relative;
 }
+@media (max-width: 768px) {
+  .product-item .section.intro .container .imgs-area .main-img {
+    width: calc(100vw - 40px);
+    height: calc(100vw - 40px);
+  }
+}
 .product-item .section.intro .container .imgs-area .main-img .carousel {
   width: 100%;
   height: 100%;
@@ -794,7 +805,7 @@ h2.font {
 }
 @media (max-width: 768px) {
   .product-item .section.intro .container .intro-area > h2 {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 .product-item .section.intro .container .intro-area > h2.title {
