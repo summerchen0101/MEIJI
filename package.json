@@ -40,6 +40,7 @@
     "run-sequence": "^1.2.1",
     "style-loader": "^0.13.1",
     "stylus-loader": "^2.1.0",
+    "vuex": "^2.3.1",
     "webpack-stream": "^3.2.0"
   },
   "description": ""
