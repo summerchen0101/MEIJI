@@ -463,9 +463,6 @@ h2.font {
 .index .section.sec1 {
   padding-top: 200px;
 }
-.index .section.sec1 .slick-initialized .slick-slide {
-  margin: 0 30px;
-}
 .index .section.sec1 .slick-initialized .slick-dots {
   bottom: -50px;
 }
