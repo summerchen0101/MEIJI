@@ -470,11 +470,8 @@ h2.font {
 }
 @media (max-width: 768px) {
   .index .section.sec1 {
-    padding-top: 130px;
+    padding-top: 100px;
   }
-}
-.index .section.sec1 .slick-initialized .slick-slide {
-  margin: 0 30px;
 }
 .index .section.sec1 .slick-initialized .slick-dots {
   bottom: -50px;
