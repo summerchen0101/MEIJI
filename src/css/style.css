@@ -19,7 +19,7 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
-  font-family: 'Microsoft YaHei';
+  font-family: '微軟正黑體';
 }
 h2.font {
   font-family: 'Pacifico', cursive;
@@ -468,6 +468,14 @@ h2.font {
 .index .section.sec1 {
   padding-top: 200px;
 }
+@media (max-width: 768px) {
+  .index .section.sec1 {
+    padding-top: 130px;
+  }
+}
+.index .section.sec1 .slick-initialized .slick-slide {
+  margin: 0 30px;
+}
 .index .section.sec1 .slick-initialized .slick-dots {
   bottom: -50px;
 }
@@ -498,7 +506,7 @@ h2.font {
 @media (max-width: 768px) {
   .index .section.sec1 .carousel .imgWrap {
     width: calc(100vw - 40px);
-    margin: 0 auto;
+    margin: 0 10px;
   }
 }
 .index .section.sec1 .carousel .imgWrap img {
